@@ -95,7 +95,6 @@ scripts:
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
 
-
 # plugin functions
 ## Mathjax: Math Formula Support
 ## https://www.mathjax.org
