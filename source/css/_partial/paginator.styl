@@ -30,10 +30,6 @@
     &:hover a 
       color  $light-pagination-link-active-color
     
-    @media (prefers-color-scheme: dark)
-      &:hover a 
-        color  $dark-pagination-link-active-color
-    
     &:before,
     &:after 
       position absolute
@@ -43,11 +39,6 @@
       background $light-pagination-link-active-color
       transition 0.3s
       bottom 0px
-    
-    @media (prefers-color-scheme: dark)
-      &:before,
-      &:after
-        background $dark-pagination-link-active-color
     
     &:before .current,
     &:after .current
@@ -67,9 +58,17 @@
     &.current
       color $light-pagination-link-active-color
       
-      @media (prefers-color-scheme: dark)
-        color $dark-pagination-link-active-color
-      
       &:before,
       &:after 
         width 60%
+
+@media (prefers-color-scheme: dark)
+  .pagination .page-number:hover a 
+    color  $dark-pagination-link-active-color
+
+  .pagination .page-number:before,
+  .pagination .page-number:after
+    background $dark-pagination-link-active-color
+
+  .pagination .page-number.current
+    color $dark-pagination-link-active-color
